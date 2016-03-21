@@ -1,0 +1,17 @@
+joomla:
+  build: .
+  links:
+    - joomladb:mysql
+  ports:
+    - 80:80
+    - 443:443
+  volumes:
+    - ./bootstrap:/bootstrap
+    - ./backup:/backup
+  env_file: environment.sh
+
+
+joomladb:
+  image: mysql:5.6
+  environment:
+    MYSQL_ROOT_PASSWORD: example
