@@ -1,7 +1,7 @@
-Docker Joomla Akeeba Backup
+Docker Joomla Softaculous Backup Restoring Container
 ======
 
-This repository contains an environment for easily booting a Joomla Backup.
+This repository contains an environment for easily booting a Joomla backup.
 
 ## Restoring a backup
 
