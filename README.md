@@ -5,15 +5,10 @@ This repository contains an environment for easily booting a Joomla backup.
 
 ## Restoring a backup
 
-To restore a backup, copy the tar.gz file onto the "backup" directory.
-Either rename the file to "backup.tar.gz" or change the corresponding
-environment in the "environment.sh" file.
-
-You can start the containers by running:
+You can restore a backup by running:
 
 ```
-docker-compose build
-docker-compose run
+./restore.sh <backup.tar.gz>
 ```
 
 Once the container is running you will get a joomla website on

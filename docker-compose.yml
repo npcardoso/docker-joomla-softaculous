@@ -1,17 +1,14 @@
 joomla:
-  build: .
+  build: web
   links:
     - joomladb:mysql
   ports:
     - 80:80
     - 443:443
   volumes:
-    - ./bootstrap:/bootstrap
-    - ./backup:/backup
-  env_file: environment.sh
-
+    - ./data:/var/www/html/data
 
 joomladb:
-  image: mysql:5.6
+  build: db
   environment:
     MYSQL_ROOT_PASSWORD: example
